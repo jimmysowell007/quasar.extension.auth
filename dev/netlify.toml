@@ -1,0 +1,7 @@
+[[plugins]]
+  package = "netlify-plugin-cypress"
+  [plugins.inputs.preBuild]
+    enable = true
+    start = 'quasar dev'
+    wait-on = 'http://localhost:8080'
+    wait-on-timeout = '30'

@@ -1,0 +1,13 @@
+{
+  "validUser": {
+    "email":"good@user.com",
+    "password" :"SW-@sowell",
+    "goodToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZHVwb24gZHVwb24iLCJyb2xlIjoic3VwZXJhZG1pbiJ9.G2WEuW4vzkI4vu5zuEQ_R7flhFd1_drtrpOHmfmHfBc"
+    },
+  "invalidUser": {
+    "email":"bad@user.com",
+    "password" :"123456",
+    "badToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZHVwb24gZHVwb24iLCJyb2xlIjoic3VwZXJhZG1pbiJ9.Aob56btu1aslKU-DNLM0GLdn1sRYbj7KimpaTZQ4SxQ"
+    }
+  }   
+  

@@ -1,0 +1,24 @@
+{
+  "@quasar/testing-e2e-cypress": {
+    "options": [
+      "scripts"
+    ]
+  },
+  "mamy-auth": {
+    "LOCAL_LOGIN_ROUTE": "/login",
+    "LOCAL_SUCCESS_REDIRECTION_ROUTE": "/home",
+    "LOCAL_CHECK_CODE_ROUTE": "/check_code",
+    "LOCAL_UPDATE_PASSWORD_ROUTE": "/reset_password",
+    "AUTH_SERVER_BASE_URL": "http://localhost:3000",
+    "AUTH_SERVER_SIGNING_ROUTE": "/users/sign_in",
+    "AUTH_SERVER_RESET_PASSWORD_ROUTE": "/users/reset_password",
+    "AUTH_SERVER_UPDATE_PASSWORD_ROUTE": "/users/passwords",
+    "AUTH_TYPE": "Bearer",
+    "VUEX_SET_TOKEN_MUTATION": "auth/set_token",
+    "VUEX_CLEAR_TOKEN_MUTATION": "auth/clear_token",
+    "VUEX_SET_EMAIL_OR_PHONENUMBER_USER_MUTATION": "auth/set_email_user",
+    "VUEX_SET_INFOS_USER_MUTATION": "auth/set_infos_user",
+    "VUEX_GET_TOKEN_GETTER": "auth/get_token",
+    "VUEX_GET_INFOS_USER_GETTER": "auth/get_infos_user"
+  }
+}

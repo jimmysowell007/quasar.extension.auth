@@ -1,0 +1,48 @@
+{
+  "name": "quasar-app-extension-mamy-auth",
+  "version": "1.3.0",
+  "description": "A Quasar auth app extension",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MamySowell/auth-extension"
+  },
+  "scripts": {
+    "lint": "cd dev && eslint --ext .js,.ts,.vue ./",
+    "dev": "cd dev && quasar dev",
+    "dep": "cd dev && yarn",
+    "test:e2e": "cd dev && cross-env E2E_TEST=true start-test \"quasar dev\" http-get://localhost:8080 \"cypress open\"",
+    "test:e2e:ci": "cd dev && cross-env E2E_TEST=true start-test \"quasar dev\" http-get://localhost:8080 \"cypress run\""
+  },
+  "keywords": [],
+  "author": "razafimandimby mamy henintsoa>",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "devDependencies": {
+    "@quasar/quasar-app-extension-testing-e2e-cypress": "^3.1.0",
+    "@types/node": "^16.9.1",
+    "@types/validator": "^13.6.3",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-vue": "^7.0.0",
+    "jwt-decode": "^3.1.2",
+    "quasar": "^2.0.4",
+    "typescript": "^4.4.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "qs": "^6.10.1",
+    "validator": "^13.6.0",
+    "vue-i18n": "^9.1.0",
+    "vue-router": "^4.0.0",
+    "vuex": "4.0"
+  }
+}
