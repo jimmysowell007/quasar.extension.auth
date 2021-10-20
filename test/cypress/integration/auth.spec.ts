@@ -33,24 +33,8 @@ describe("User authentification ", () => {
       .should("contain.text", "The email is not valid")
       .should("have.css", "color", "rgb(193, 0, 21)");
       cy.get("[data-cy=submit-login]").should("be.disabled");
-      
-      cy.get("[data-cy=email]").type("badFormated@Email")
-      cy.get("[data-cy=password]")
-      .trigger('mousedown', 'topRight').click()
-      cy.get(".q-field__messages > div")
-      .should("contain.text", "The email is not valid")
-      .should("have.css", "color", "rgb(193, 0, 21)");
-      cy.get("[data-cy=submit-login]").should("be.disabled");
-      
-      cy.get("[data-cy=email]").type("badFormated.Email")
-      cy.get("[data-cy=password]")
-      .trigger('mousedown', 'topRight').click()
-      cy.get(".q-field__messages > div")
-      .should("contain.text", "The email is not valid")
-      .should("have.css", "color", "rgb(193, 0, 21)");
-      cy.get("[data-cy=submit-login]").should("be.disabled");
     });
-    
+
     it("should display error message when password has less than 6 characters", () => {
       cy.get("[data-cy=email]").type("email@exemple.com");
       cy.get("[data-cy=password").type("12345").invoke('val').should('have.length', 5);
